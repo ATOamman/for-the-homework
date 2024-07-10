@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ data.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Our Product</h1>
+            <p>Our product is designed to help you achieve your goals with ease and efficiency.</p>
+        </div>
+
+        <div class="features">
+            {% for feature in data.features %}
+            <div class="feature">
+                <img src="https://via.placeholder.com/150" alt="{{ feature.name }}">
+                <h2>{{ feature.name }}</h2>
+                <p>{{ feature.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="cta">
+            <h2>Call to Action</h2>
+            <p>Sign up now to start your journey with our amazing product!</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; {{ now().year }} Marketing Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
