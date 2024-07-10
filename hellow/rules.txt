@@ -1,1 +1,10 @@
-# general rules and plans
+# Follow version control best practices using Git, with clear commit messages and branches.
+# Write clean, modular, and well-documented code to enhance readability and maintainability.
+# Use consistent coding conventions and style guidelines (e.g., PEP 8 for Python) across the project.
+# Implement automated testing (unit tests, integration tests) to ensure code quality and functionality.
+# Conduct code reviews to share knowledge, catch bugs early, and maintain code quality.
+# Document APIs, libraries, and project structure comprehensively for easy understanding and onboarding.
+# Prioritize security by following best practices (e.g., input validation, secure authentication).
+# Continuously refactor and optimize code to improve performance and reduce technical debt.
+# Collaborate effectively with team members, communicate clearly, and participate actively in discussions.
+# Stay updated with industry trends, tools, and technologies to improve skills and development processes.
